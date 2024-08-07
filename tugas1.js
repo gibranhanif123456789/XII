@@ -14,3 +14,8 @@ console.log(a, b, c);
 let person = { name: "Jane", age: 30 };
 let { name, age } = person;
 console.log(name, age);
+
+let array1 = [1, 2, 3];
+let array2 = [4, 5, 6];
+let combinedArray = [...array1, ...array2];
+console.log(combinedArray);
