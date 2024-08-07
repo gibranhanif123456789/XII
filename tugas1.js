@@ -23,3 +23,13 @@ let obj1 = { a: 1, b: 2 };
 let obj2 = { c: 3, d: 4 };
 let combinedObj = { ...obj1, ...obj2 };
 console.log(combinedObj);
+
+const promiseFunction = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Promise resolved!");
+        }, 2000);
+    });
+};
+
+promiseFunction().then(result => console.log(result)); 
